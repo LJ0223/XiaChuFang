@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MainHeaderViewDelegate, CirCleViewDelegate {
     
     // 单行注释
     /*  多行注释  */
@@ -31,8 +31,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "下厨房"
         
-        self.loadDataSource()
         self.setUpTable()
+        self.loadDataSource()
+        
+        print("aaaaaaaaaaaa")
     }
     
     // MARK: - tableView Delegate && tableView DataSource
@@ -68,7 +70,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       headerView = MainHeaderView.init(frame: CGRectMake(0, 0, SCREENWIDTH, 340))
+        headerView = MainHeaderView.init(frame: CGRectMake(0, 0, SCREENWIDTH, 340))
+        headerView?.delegate = self
+        headerView?.circleView.imageArray = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
+        headerView?.circleView.delegate = self
         return headerView
     }
     
@@ -80,8 +85,35 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 0.0000000001
     }
     
+    
+    // MARK:- MainHeaderViewDelegate 协议方法
+    // MARK:  MainHeaderView顶部两个大按钮的点击事件
+    func mainHeaderViewTopBtnClick(title: NSString) {
+        print("title====\(title)")
+        if title.isEqualToString("left") {
+            // MainHeaderView左上角点击事件
+            print("MainHeaderView左上角点击事件")
+        } else {
+            // MainHeaderView右上角点击事件
+            print("MainHeaderView右上角点击事件")
+        }
+    }
+    
+    // MARK:  MainHeaderView中间四个小按钮的点击事件
+    func mainHeaderViewCenterBtnsClick(sender: CustomCentBtn) {
+        print("centerBtn.title====\(sender.titlLab.text)")
+    }
+    
+    // MARK:-  MainHeaderView底部轮播图点击事件
+    func clickCurrentImage(currentIndxe: Int) {
+        print("选中图片下标====\(currentIndxe)")
+    }
+    
+    
     func loadDataSource() {
         mainArray = NSMutableArray.init(array: ["宝宝0", "宝宝1", "宝宝2", "宝宝3", "宝宝4", "宝宝5", "宝宝6", "宝宝7", "宝宝8", "宝宝9", "宝宝10", "宝宝11"])
+
+        self.mainTable?.reloadData()
     }
     
     func setUpTable(){

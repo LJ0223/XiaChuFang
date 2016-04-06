@@ -9,20 +9,34 @@
 import UIKit
 
 protocol MainHeaderViewDelegate: class {
-    func mainHeaderViewTopBtnClick(sender: UIButton)
+    func mainHeaderViewTopBtnClick(title: NSString)
+    func mainHeaderViewCenterBtnsClick(sender: CustomCentBtn)
 }
 
 class MainHeaderView: UIView {
     
+    var delegate       : MainHeaderViewDelegate?
+    
+    /*
+     * 顶部两个大按钮
+     */
     var leftBtn        : UIImageView!
     var rightBtn       : UIImageView!
     var leftTitle      : UILabel!
     var rightTitle     : UILabel!
     var leftCenterImg  : UIImageView!
     var rightCenterImg : UIImageView!
+    
+    /*
+     * 中间展示条
+     */
+    var BTNBASETAG     : CGFloat = 1234567
     var centerTitle    : UILabel!
     
-    var BTNBASETAG     : CGFloat = 1234567
+    /*
+     * 底部轮播图
+     */
+    var circleView     : CirCleView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,18 +44,44 @@ class MainHeaderView: UIView {
         initBaseLayout()
     }
     
+    func leftTapAction() {
+        print("左上角点击事件")
+        if let _delegate = delegate {
+            _delegate.mainHeaderViewTopBtnClick("left")
+        }
+    }
+    
+    func rightTapAction() {
+        print("右上角点击事件")
+        if let _delegate = delegate {
+            _delegate.mainHeaderViewTopBtnClick("right")
+        }
+    }
+    
+    func centerBtnsTapAction(sender: CustomCentBtn) {
+        print("点我了")
+        if let _delegate = delegate {
+            _delegate.mainHeaderViewCenterBtnsClick(sender)
+        }
+    }
+    
+    
     func initBaseLayout() {
         self.topTwoBtnLayout()
         self.centerButtonsAndTipLayout()
         self.bottomScrollLayout()
     }
     
+    /*******************************  底部轮播图  **************************/
     func bottomScrollLayout() {
-        let bottomView = UIImageView.init(frame: CGRectMake(0, 260, SCREENWIDTH, 80))
-        bottomView.image = UIImage(imageLiteral: "bottom.jpg")
-        self.addSubview(bottomView)
+        let imageArray: [UIImage!] = [UIImage(named: "tx2.jpg"), UIImage(named: "tx3.jpg"), UIImage(named: "tx4.jpg")]
+        
+        self.circleView = CirCleView(frame: CGRectMake(0, 260, SCREENWIDTH, 80), imageArray: imageArray)
+        circleView.backgroundColor = UIColor.orangeColor()
+        self.addSubview(circleView)
     }
     
+    /*******************************  中间区域小按钮和展示Label  **************************/
     func centerButtonsAndTipLayout() {
         let centerArray = NSMutableArray.init(array:["排行榜", "看视频", "买买买", "菜谱分类"])
         for (index, string) in centerArray.enumerate() {
@@ -49,25 +89,14 @@ class MainHeaderView: UIView {
             print(index)
             let countF = CGFloat(centerArray.count)
             let indexF = CGFloat(index)
-            print(indexF)
             
-            let centerBtn = UIView.init(frame: CGRectMake(indexF*(SCREENWIDTH/countF), leftBtn.frame.size.height, SCREENWIDTH/countF, 80))
-            print(centerBtn)
-            
+            let centerBtn = CustomCentBtn.init(frame: CGRectMake(indexF*(SCREENWIDTH/countF), leftBtn.frame.size.height, SCREENWIDTH/countF, 80))
             centerBtn.backgroundColor = UIColor.whiteColor()
+            centerBtn.tag = Int((indexF + 1.0) * BTNBASETAG)
+            //            centerBtn.smallImg.image = UIImage(imageLiteral: "\(indexF)")
+            centerBtn.titlLab.text = string as? String
+            centerBtn.addTarget(self, action: "centerBtnsTapAction:", forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(centerBtn)
-            
-            let smallImg = UIImageView.init(frame: CGRectMake(SCREENWIDTH/countF/2-10, 20, 20, 20))
-            smallImg.backgroundColor = UIColor.redColor()
-            centerBtn.addSubview(smallImg)
-            
-            let titlLab = UILabel.init(frame: CGRectMake(5, CGRectGetMaxY(smallImg.frame)+10, SCREENWIDTH/countF-10, 12))
-            titlLab.font = UIFont.systemFontOfSize(11)
-            titlLab.textAlignment = NSTextAlignment.Center
-            titlLab.textColor = XCFColor(102, g: 102, b: 102)
-            titlLab.text = string as? String
-            centerBtn.addSubview(titlLab)
-            
         }
         
         centerTitle = UILabel.init(frame: CGRectMake(0, leftBtn.frame.size.height+80, SCREENWIDTH, 50))
@@ -80,6 +109,7 @@ class MainHeaderView: UIView {
         
     }
     
+    /*******************************  顶部两个大按钮  **************************/
     func topTwoBtnLayout() {
         leftBtn = UIImageView.init(frame: CGRectMake(0, 0, SCREENWIDTH/2-1, 130))
         leftBtn.userInteractionEnabled = true
@@ -128,14 +158,6 @@ class MainHeaderView: UIView {
         let rightTap = UITapGestureRecognizer(target: self, action: "rightTapAction")
         rightCenterImg.addGestureRecognizer(rightTap)
         rightBtn.addGestureRecognizer(rightTap)
-    }
-    
-    func leftTapAction() {
-        print("左上角点击事件")
-    }
-    
-    func rightTapAction() {
-        print("右上角点击事件")
     }
     
     required init?(coder aDecoder: NSCoder) {

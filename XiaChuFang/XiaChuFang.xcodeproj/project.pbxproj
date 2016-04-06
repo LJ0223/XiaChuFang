@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7236C6B629A143BB6314FDD4 /* Pods_XiaChuFang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E76603BE3BF69AAE247171 /* Pods_XiaChuFang.framework */; };
+		AFD8185F1CA4DB5000DE1C85 /* CustomCentBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8185E1CA4DB5000DE1C85 /* CustomCentBtn.swift */; };
+		AFD818671CA5137200DE1C85 /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD818661CA5137200DE1C85 /* CirCleView.swift */; };
 		AFE0BF6C1C9A93DA0004DEFA /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BF6B1C9A93DA0004DEFA /* PrefixHeader.swift */; };
 		AFE4A7731C99009000DAFD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4A7721C99009000DAFD91 /* AppDelegate.swift */; };
 		AFE4A7781C99009000DAFD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4A7761C99009000DAFD91 /* Main.storyboard */; };
@@ -43,8 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06E76603BE3BF69AAE247171 /* Pods_XiaChuFang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaChuFang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D565042DDCE9A5DD9FD36F7 /* Pods-XiaChuFang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaChuFang.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaChuFang/Pods-XiaChuFang.release.xcconfig"; sourceTree = "<group>"; };
+		AFD8185E1CA4DB5000DE1C85 /* CustomCentBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCentBtn.swift; sourceTree = "<group>"; };
+		AFD818661CA5137200DE1C85 /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
 		AFE0BF6B1C9A93DA0004DEFA /* PrefixHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 		AFE4A76F1C99009000DAFD91 /* XiaChuFang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaChuFang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE4A7721C99009000DAFD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		AFE4A7C11C99351700DAFD91 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = "Main(下厨房)/Controller/Image.xcassets"; sourceTree = "<group>"; };
 		AFE4A7C31C9948E600DAFD91 /* MainClassicalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClassicalCell.swift; sourceTree = "<group>"; };
 		AFE4A7C51C99685200DAFD91 /* MainHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
-		FB638D1230D64B311D8EA946 /* Pods-XiaChuFang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaChuFang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XiaChuFang/Pods-XiaChuFang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7236C6B629A143BB6314FDD4 /* Pods_XiaChuFang.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,28 +94,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AEC92C19BF862AF0A7EBE59 /* Frameworks */ = {
+		AFD818651CA5137200DE1C85 /* DIY */ = {
 			isa = PBXGroup;
 			children = (
-				06E76603BE3BF69AAE247171 /* Pods_XiaChuFang.framework */,
+				AFD818661CA5137200DE1C85 /* CirCleView.swift */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		11044FDC1C9A8AD800DA55BB /* DIYUtil */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DIYUtil;
-			sourceTree = "<group>";
-		};
-		A96D736311A45247F34B8CFA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FB638D1230D64B311D8EA946 /* Pods-XiaChuFang.debug.xcconfig */,
-				9D565042DDCE9A5DD9FD36F7 /* Pods-XiaChuFang.release.xcconfig */,
-			);
-			name = Pods;
+			path = DIY;
 			sourceTree = "<group>";
 		};
 		AFE4A7661C99009000DAFD91 = {
@@ -126,8 +109,6 @@
 				AFE4A7861C99009000DAFD91 /* XiaChuFangTests */,
 				AFE4A7911C99009000DAFD91 /* XiaChuFangUITests */,
 				AFE4A7701C99009000DAFD91 /* Products */,
-				A96D736311A45247F34B8CFA /* Pods */,
-				0AEC92C19BF862AF0A7EBE59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +131,7 @@
 				AFE4A7A01C9900DB00DAFD91 /* Community(社区) */,
 				AFE4A7AF1C9900DB00DAFD91 /* Me(我) */,
 				AFE4A7B41C9900DB00DAFD91 /* TabBarController */,
-				11044FDC1C9A8AD800DA55BB /* DIYUtil */,
+				AFD818651CA5137200DE1C85 /* DIY */,
 				AFE4A7761C99009000DAFD91 /* Main.storyboard */,
 				AFE4A7791C99009000DAFD91 /* Assets.xcassets */,
 				AFE4A7C11C99351700DAFD91 /* Image.xcassets */,
@@ -241,6 +222,7 @@
 			children = (
 				AFE4A7C31C9948E600DAFD91 /* MainClassicalCell.swift */,
 				AFE4A7C51C99685200DAFD91 /* MainHeaderView.swift */,
+				AFD8185E1CA4DB5000DE1C85 /* CustomCentBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,12 +330,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE4A7971C99009000DAFD91 /* Build configuration list for PBXNativeTarget "XiaChuFang" */;
 			buildPhases = (
-				04C3A827315D3896DBAB4143 /* Check Pods Manifest.lock */,
 				AFE4A76B1C99009000DAFD91 /* Sources */,
 				AFE4A76C1C99009000DAFD91 /* Frameworks */,
 				AFE4A76D1C99009000DAFD91 /* Resources */,
-				72A7286D587225856BB89D80 /* Embed Pods Frameworks */,
-				4E4A08FB4F18717224DFD972 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -471,54 +450,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		04C3A827315D3896DBAB4143 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4E4A08FB4F18717224DFD972 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XiaChuFang/Pods-XiaChuFang-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72A7286D587225856BB89D80 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XiaChuFang/Pods-XiaChuFang-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		AFE4A76B1C99009000DAFD91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -529,7 +460,9 @@
 				AFE4A7BC1C9900DB00DAFD91 /* MeViewController.swift in Sources */,
 				AFE0BF6C1C9A93DA0004DEFA /* PrefixHeader.swift in Sources */,
 				AFE4A7B91C9900DB00DAFD91 /* CommunityVC.swift in Sources */,
+				AFD8185F1CA4DB5000DE1C85 /* CustomCentBtn.swift in Sources */,
 				AFE4A7BB1C9900DB00DAFD91 /* MarketViewController.swift in Sources */,
+				AFD818671CA5137200DE1C85 /* CirCleView.swift in Sources */,
 				AFE4A7731C99009000DAFD91 /* AppDelegate.swift in Sources */,
 				AFE4A7BF1C99017E00DAFD91 /* TabeBarViewController.swift in Sources */,
 				AFE4A7BA1C9900DB00DAFD91 /* MainViewController.swift in Sources */,
@@ -672,7 +605,6 @@
 		};
 		AFE4A7981C99009000DAFD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB638D1230D64B311D8EA946 /* Pods-XiaChuFang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -690,7 +622,6 @@
 		};
 		AFE4A7991C99009000DAFD91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D565042DDCE9A5DD9FD36F7 /* Pods-XiaChuFang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
