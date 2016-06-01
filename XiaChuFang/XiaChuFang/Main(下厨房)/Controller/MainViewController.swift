@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MainHeaderViewDelegate, CirCleViewDelegate {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MainHeaderViewDelegate, CirCleViewDelegate, UISearchBarDelegate {
     
     // 单行注释
     /*  多行注释  */
@@ -23,7 +23,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var headerView: MainHeaderView?
     
-
+    var searchBar:  UISearchBar?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,15 +32,18 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "下厨房"
         
-        self.setUpTable()
+        self.layoutNavigationBar()
         self.loadDataSource()
+        self.setUpTable()
         
         print("aaaaaaaaaaaa")
     }
     
     // MARK: - tableView Delegate && tableView DataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        print(mainArray!.count)
+
+        return (mainArray?.count)!
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -47,8 +51,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(mainArray!.count)
-        return mainArray!.count
+        var sectionArr = NSMutableArray()
+        sectionArr = mainArray![section] as! NSMutableArray
+        print(sectionArr.count)
+        
+        return sectionArr.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -58,9 +65,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         //下面两个属性对应subtitle
 //        cell.firstTitle?.text = mainArray![indexPath.row] as? String
 //        cell.subTitle?.text = mainArray![indexPath.row] as? String
+        var sectionArr = NSMutableArray()
+        sectionArr = mainArray![indexPath.section] as! NSMutableArray
         
         var dic = Dictionary<String, String>()
-        dic["name"] = mainArray![indexPath.row] as? String
+        dic["name"] = sectionArr[indexPath.row] as? String
         cell.setValueForCell(dic)
         
         //添加照片
@@ -70,21 +79,28 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        headerView = MainHeaderView.init(frame: CGRectMake(0, 0, SCREENWIDTH, 340))
-        headerView?.delegate = self
-        headerView?.circleView.imageArray = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
-        headerView?.circleView.delegate = self
-        return headerView
+        var headerArray = NSArray()
+        headerArray = NSBundle.mainBundle().loadNibNamed("MainClassicalSectionHeaderView", owner: nil, options: nil)
+        
+        let sectionHeaderView = headerArray.firstObject as! MainClassicalSectionHeaderView
+
+        return sectionHeaderView
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 340
+        return 30
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.0000000001
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // 实例化一个将要跳转的viewController
+        let detailVC = MainDetailVC()
+        // 跳转
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
     
     // MARK:- MainHeaderViewDelegate 协议方法
     // MARK:  MainHeaderView顶部两个大按钮的点击事件
@@ -110,11 +126,48 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    // MARK:- UISearchBarDelegate
+    // MARK: 输入框内容改变触发事件
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        print("输入框内容改变触发事件：\(searchText)")
+    }
+    
+    // MARK: 书签按钮触发事件
+    func searchBarBookmarkButtonClicked(searchBar: UISearchBar) {
+        print("搜索历史")
+    }
+    
+    // MARK: 取消按钮触发事件
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        print("取消搜索")
+    }
+
+    // MARK: 搜索触发事件
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        print("开始搜索")
+    }
+    
+    func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
+        print("开始编辑")
+        let searchVC = SearchViewController()
+        searchVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(searchVC, animated: true)
+        return false
+    }
+    
+    // MARK:- loadDataSource
     func loadDataSource() {
-        mainArray = NSMutableArray.init(array: ["宝宝0", "宝宝1", "宝宝2", "宝宝3", "宝宝4", "宝宝5", "宝宝6", "宝宝7", "宝宝8", "宝宝9", "宝宝10", "宝宝11"])
+        
+        let path = NSBundle.mainBundle().pathForResource("mainListPlist", ofType: "plist")
+        let sourceArr = NSMutableArray.init(contentsOfFile: path!)
+        
+        mainArray = NSMutableArray.init(array: sourceArr!)
 
         self.mainTable?.reloadData()
     }
+    
+    
+    // MARK:- LayoutUIs
     
     func setUpTable(){
         mainTable = UITableView.init(frame: CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT) , style: UITableViewStyle.Grouped)
@@ -122,6 +175,32 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         mainTable!.dataSource = self
         mainTable!.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(mainTable!)
+        
+        headerView = MainHeaderView.init(frame: CGRectMake(0, 0, SCREENWIDTH, 340))
+        headerView?.delegate = self
+        headerView?.circleView.imageArray = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
+        headerView?.circleView.delegate = self
+        mainTable?.tableHeaderView = headerView
+    }
+    
+    // MARK: SearchBar
+    func layoutNavigationBar() {
+        searchBar = UISearchBar(frame: CGRect.init(x: 30, y: 20, width: SCREENWIDTH-60, height: 40))
+        searchBar?.placeholder = "菜谱、食材"
+        searchBar?.barStyle = UIBarStyle.Default
+        searchBar?.barTintColor = UIColor.darkGrayColor()
+        searchBar?.tintColor = UIColor.blackColor()
+        searchBar?.translucent = true
+        searchBar?.showsBookmarkButton = false
+        searchBar?.showsCancelButton = false
+        searchBar?.showsSearchResultsButton = false
+        searchBar?.showsScopeBar = false
+        searchBar?.showsScopeBar = false
+        searchBar?.delegate = self
+        
+        self.navigationItem.titleView = searchBar
+        
+        var leftBtn = UIButton(frame: CGRect.init(x: 0, y: 0, width: 25, height: 40))
     }
 
     override func didReceiveMemoryWarning() {
