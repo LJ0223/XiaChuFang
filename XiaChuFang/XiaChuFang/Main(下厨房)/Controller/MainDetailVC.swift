@@ -10,10 +10,6 @@ import UIKit
 
 class MainDetailVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    //屏幕的宽和高
-    let width = UIScreen.mainScreen().bounds.width
-    let height = UIScreen.mainScreen().bounds.height
-    
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -62,7 +58,7 @@ class MainDetailVC: UIViewController, UICollectionViewDataSource, UICollectionVi
         //        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
-    
+    // MARK: - UICollectionViewDelegate && UICollectionViewDataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 100
     }
@@ -97,7 +93,7 @@ class MainDetailVC: UIViewController, UICollectionViewDataSource, UICollectionVi
     - returns: header的大小
     */
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: width, height: 17)
+        return CGSize(width: SCREENWIDTH, height: 17)
     }
     /**
      Description:可以定制不同的item
