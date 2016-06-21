@@ -200,7 +200,20 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.navigationItem.titleView = searchBar
         
-        var leftBtn = UIButton(frame: CGRect.init(x: 0, y: 0, width: 25, height: 40))
+        let leftBtn = UIButton.init(frame: CGRectMake(0, 0, 20, 20))
+        leftBtn.setImage(UIImage(imageLiteral: "jiahao"), forState: UIControlState.Normal)
+        leftBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        leftBtn.addTarget(self, action:"leftBtnAction", forControlEvents: UIControlEvents.TouchUpInside)
+        let leftItem = UIBarButtonItem.init(customView: leftBtn)
+        self.navigationItem.leftBarButtonItem = leftItem
+        
+        let rightBtn = UIButton.init(frame: CGRectMake(0, 0, 20, 20))
+        rightBtn.setImage(UIImage(imageLiteral: "cailan"), forState: UIControlState.Normal)
+        rightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        rightBtn.addTarget(self, action:"leftBtnAction", forControlEvents: UIControlEvents.TouchUpInside)
+        let rightItem = UIBarButtonItem.init(customView: rightBtn)
+        self.navigationItem.rightBarButtonItem = rightItem
+        
     }
 
     override func didReceiveMemoryWarning() {

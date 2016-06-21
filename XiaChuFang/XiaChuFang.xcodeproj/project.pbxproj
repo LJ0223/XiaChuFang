@@ -17,11 +17,25 @@
 		AF32A6481D08080B005670F8 /* AreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF32A6461D08080B005670F8 /* AreaViewController.xib */; };
 		AF41D1C71CFD84F900023207 /* MyCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41D1C61CFD84F900023207 /* MyCollectionHeaderView.swift */; };
 		AF41D1C91CFD850900023207 /* MyCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF41D1C81CFD850900023207 /* MyCollectionHeaderView.xib */; };
+		AFC0A18A1D17F05A00C2EE3B /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0A1881D17F05A00C2EE3B /* SetUpViewController.swift */; };
+		AFC0A18B1D17F05A00C2EE3B /* SetUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0A1891D17F05A00C2EE3B /* SetUpViewController.xib */; };
+		AFC0A18D1D17F38000C2EE3B /* SetUpHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0A18C1D17F38000C2EE3B /* SetUpHeaderView.swift */; };
+		AFC0A18F1D17F38800C2EE3B /* SetUpHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0A18E1D17F38800C2EE3B /* SetUpHeaderView.xib */; };
 		AFC945CD1CD98CB200682472 /* MainClassicalSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC945CC1CD98CB200682472 /* MainClassicalSectionHeaderView.swift */; };
 		AFC945CF1CD98CC500682472 /* MainClassicalSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC945CE1CD98CC500682472 /* MainClassicalSectionHeaderView.xib */; };
 		AFC945D31CD98DAF00682472 /* mainListPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFC945D21CD98DAF00682472 /* mainListPlist.plist */; };
 		AFC945D51CD9981C00682472 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC945D41CD9981C00682472 /* SearchViewController.swift */; };
 		AFC945D71CD9984100682472 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC945D61CD9984100682472 /* Image.xcassets */; };
+		AFCA55FC1D18E24500860E99 /* LJAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA55FB1D18E24500860E99 /* LJAnimationView.swift */; };
+		AFCA56021D18E25700860E99 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA55FE1D18E25700860E99 /* CircleLayer.swift */; };
+		AFCA56031D18E25700860E99 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA55FF1D18E25700860E99 /* RectangleLayer.swift */; };
+		AFCA56041D18E25700860E99 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA56001D18E25700860E99 /* TriangleLayer.swift */; };
+		AFCA56051D18E25700860E99 /* WaveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA56011D18E25700860E99 /* WaveLayer.swift */; };
+		AFCA56071D18E27300860E99 /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA56061D18E27300860E99 /* PrefixHeader.swift */; };
+		AFCA56091D18E28E00860E99 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA56081D18E28E00860E99 /* Extension.swift */; };
+		AFCA560B1D18E2B100860E99 /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA560A1D18E2B100860E99 /* ScreenViewController.swift */; };
+		AFCA56121D18E69900860E99 /* EditPersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA56101D18E69900860E99 /* EditPersonalController.swift */; };
+		AFCA56131D18E69900860E99 /* EditPersonalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCA56111D18E69900860E99 /* EditPersonalController.xib */; };
 		AFD4D6EC1D02BAF400ECF7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD4D6EB1D02BAF400ECF7CE /* Assets.xcassets */; };
 		AFD4D6EE1D02BE1800ECF7CE /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD4D6ED1D02BE1800ECF7CE /* MeViewController.xib */; };
 		AFD4D6F51D02C01800ECF7CE /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD4D6F41D02C01800ECF7CE /* MeHeaderView.swift */; };
@@ -31,7 +45,6 @@
 		AFD696D61CFD74D000A1D4CA /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD696D41CFD74D000A1D4CA /* MyCollectionViewCell.xib */; };
 		AFD8185F1CA4DB5000DE1C85 /* CustomCentBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8185E1CA4DB5000DE1C85 /* CustomCentBtn.swift */; };
 		AFD818671CA5137200DE1C85 /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD818661CA5137200DE1C85 /* CirCleView.swift */; };
-		AFE0BF6C1C9A93DA0004DEFA /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BF6B1C9A93DA0004DEFA /* PrefixHeader.swift */; };
 		AFE4A7731C99009000DAFD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4A7721C99009000DAFD91 /* AppDelegate.swift */; };
 		AFE4A7781C99009000DAFD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4A7761C99009000DAFD91 /* Main.storyboard */; };
 		AFE4A77D1C99009000DAFD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4A77B1C99009000DAFD91 /* LaunchScreen.storyboard */; };
@@ -79,11 +92,25 @@
 		AF32A6461D08080B005670F8 /* AreaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaViewController.xib; sourceTree = "<group>"; };
 		AF41D1C61CFD84F900023207 /* MyCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionHeaderView.swift; sourceTree = "<group>"; };
 		AF41D1C81CFD850900023207 /* MyCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionHeaderView.xib; sourceTree = "<group>"; };
+		AFC0A1881D17F05A00C2EE3B /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		AFC0A1891D17F05A00C2EE3B /* SetUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUpViewController.xib; sourceTree = "<group>"; };
+		AFC0A18C1D17F38000C2EE3B /* SetUpHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpHeaderView.swift; sourceTree = "<group>"; };
+		AFC0A18E1D17F38800C2EE3B /* SetUpHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUpHeaderView.xib; sourceTree = "<group>"; };
 		AFC945CC1CD98CB200682472 /* MainClassicalSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClassicalSectionHeaderView.swift; sourceTree = "<group>"; };
 		AFC945CE1CD98CC500682472 /* MainClassicalSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainClassicalSectionHeaderView.xib; sourceTree = "<group>"; };
 		AFC945D21CD98DAF00682472 /* mainListPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainListPlist.plist; sourceTree = "<group>"; };
 		AFC945D41CD9981C00682472 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		AFC945D61CD9984100682472 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		AFCA55FB1D18E24500860E99 /* LJAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJAnimationView.swift; sourceTree = "<group>"; };
+		AFCA55FE1D18E25700860E99 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
+		AFCA55FF1D18E25700860E99 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		AFCA56001D18E25700860E99 /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
+		AFCA56011D18E25700860E99 /* WaveLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveLayer.swift; sourceTree = "<group>"; };
+		AFCA56061D18E27300860E99 /* PrefixHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
+		AFCA56081D18E28E00860E99 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AFCA560A1D18E2B100860E99 /* ScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
+		AFCA56101D18E69900860E99 /* EditPersonalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPersonalController.swift; sourceTree = "<group>"; };
+		AFCA56111D18E69900860E99 /* EditPersonalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPersonalController.xib; sourceTree = "<group>"; };
 		AFD4D6EB1D02BAF400ECF7CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD4D6ED1D02BE1800ECF7CE /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 		AFD4D6F41D02C01800ECF7CE /* MeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
@@ -93,7 +120,6 @@
 		AFD696D41CFD74D000A1D4CA /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFD8185E1CA4DB5000DE1C85 /* CustomCentBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCentBtn.swift; sourceTree = "<group>"; };
 		AFD818661CA5137200DE1C85 /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
-		AFE0BF6B1C9A93DA0004DEFA /* PrefixHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrefixHeader.swift; path = ../PrefixHeader.swift; sourceTree = "<group>"; };
 		AFE4A76F1C99009000DAFD91 /* XiaChuFang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaChuFang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE4A7721C99009000DAFD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4A7771C99009000DAFD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,10 +182,23 @@
 		AFC945D11CD98D9200682472 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AFE0BF6B1C9A93DA0004DEFA /* PrefixHeader.swift */,
+				AFCA55FD1D18E25700860E99 /* Layer */,
 				AFC945D21CD98DAF00682472 /* mainListPlist.plist */,
+				AFCA56081D18E28E00860E99 /* Extension.swift */,
+				AFCA56061D18E27300860E99 /* PrefixHeader.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		AFCA55FD1D18E25700860E99 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA55FE1D18E25700860E99 /* CircleLayer.swift */,
+				AFCA55FF1D18E25700860E99 /* RectangleLayer.swift */,
+				AFCA56001D18E25700860E99 /* TriangleLayer.swift */,
+				AFCA56011D18E25700860E99 /* WaveLayer.swift */,
+			);
+			path = Layer;
 			sourceTree = "<group>";
 		};
 		AFD4D6F31D02C01800ECF7CE /* View */ = {
@@ -167,6 +206,8 @@
 			children = (
 				AFD4D6F41D02C01800ECF7CE /* MeHeaderView.swift */,
 				AFD4D6F81D02C03A00ECF7CE /* MeHeaderView.xib */,
+				AFC0A18C1D17F38000C2EE3B /* SetUpHeaderView.swift */,
+				AFC0A18E1D17F38800C2EE3B /* SetUpHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				AFE4A7721C99009000DAFD91 /* AppDelegate.swift */,
+				AFCA560A1D18E2B100860E99 /* ScreenViewController.swift */,
+				AFCA55FB1D18E24500860E99 /* LJAnimationView.swift */,
 				AFE4A7A51C9900DB00DAFD91 /* Main(下厨房) */,
 				AFE4A7AA1C9900DB00DAFD91 /* Market(市集) */,
 				AFE4A7A01C9900DB00DAFD91 /* Community(社区) */,
@@ -323,6 +366,10 @@
 			children = (
 				AFE4A7B11C9900DB00DAFD91 /* MeViewController.swift */,
 				AFD4D6ED1D02BE1800ECF7CE /* MeViewController.xib */,
+				AFC0A1881D17F05A00C2EE3B /* SetUpViewController.swift */,
+				AFC0A1891D17F05A00C2EE3B /* SetUpViewController.xib */,
+				AFCA56101D18E69900860E99 /* EditPersonalController.swift */,
+				AFCA56111D18E69900860E99 /* EditPersonalController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -467,6 +514,7 @@
 				AFE4A77D1C99009000DAFD91 /* LaunchScreen.storyboard in Resources */,
 				AF41D1C91CFD850900023207 /* MyCollectionHeaderView.xib in Resources */,
 				AFD4D6F91D02C03A00ECF7CE /* MeHeaderView.xib in Resources */,
+				AFCA56131D18E69900860E99 /* EditPersonalController.xib in Resources */,
 				AFD4D6EE1D02BE1800ECF7CE /* MeViewController.xib in Resources */,
 				AFF8116E1D06B2EC00D491F4 /* MarketViewController.xib in Resources */,
 				AFD696D21CFD741400A1D4CA /* MainDetailVC.xib in Resources */,
@@ -475,8 +523,10 @@
 				AFC945D31CD98DAF00682472 /* mainListPlist.plist in Resources */,
 				AFD696D61CFD74D000A1D4CA /* MyCollectionViewCell.xib in Resources */,
 				AF32A6431D07F748005670F8 /* MarketCenterCell.xib in Resources */,
+				AFC0A18B1D17F05A00C2EE3B /* SetUpViewController.xib in Resources */,
 				AFD4D6EC1D02BAF400ECF7CE /* Assets.xcassets in Resources */,
 				AFF811731D06CBC600D491F4 /* MarketTopHeaderView.xib in Resources */,
+				AFC0A18F1D17F38800C2EE3B /* SetUpHeaderView.xib in Resources */,
 				AFE4A7781C99009000DAFD91 /* Main.storyboard in Resources */,
 				AF32A6481D08080B005670F8 /* AreaViewController.xib in Resources */,
 			);
@@ -506,27 +556,37 @@
 				AFC945D51CD9981C00682472 /* SearchViewController.swift in Sources */,
 				AFE4A7C61C99685200DAFD91 /* MainHeaderView.swift in Sources */,
 				AFD696D51CFD74D000A1D4CA /* MyCollectionViewCell.swift in Sources */,
+				AFC0A18D1D17F38000C2EE3B /* SetUpHeaderView.swift in Sources */,
+				AFCA56121D18E69900860E99 /* EditPersonalController.swift in Sources */,
 				AFE4A7C41C9948E600DAFD91 /* MainClassicalCell.swift in Sources */,
+				AFCA55FC1D18E24500860E99 /* LJAnimationView.swift in Sources */,
 				AFE4A7BC1C9900DB00DAFD91 /* MeViewController.swift in Sources */,
+				AFCA56091D18E28E00860E99 /* Extension.swift in Sources */,
 				AFF1197D1CB51BC00098282D /* ImageScroller.swift in Sources */,
 				AFC945CD1CD98CB200682472 /* MainClassicalSectionHeaderView.swift in Sources */,
-				AFE0BF6C1C9A93DA0004DEFA /* PrefixHeader.swift in Sources */,
 				AF32A6421D07F748005670F8 /* MarketCenterCell.swift in Sources */,
+				AFCA56021D18E25700860E99 /* CircleLayer.swift in Sources */,
 				AFE4A7B91C9900DB00DAFD91 /* CommunityVC.swift in Sources */,
+				AFCA56031D18E25700860E99 /* RectangleLayer.swift in Sources */,
 				AFD8185F1CA4DB5000DE1C85 /* CustomCentBtn.swift in Sources */,
 				AFE4A7BB1C9900DB00DAFD91 /* MarketViewController.swift in Sources */,
 				AFD4D6F51D02C01800ECF7CE /* MeHeaderView.swift in Sources */,
+				AFCA560B1D18E2B100860E99 /* ScreenViewController.swift in Sources */,
 				AF32A63E1D07BDC9005670F8 /* CenterScrollHeaderCollectionReusableView.swift in Sources */,
 				AFD818671CA5137200DE1C85 /* CirCleView.swift in Sources */,
 				AFE4A7731C99009000DAFD91 /* AppDelegate.swift in Sources */,
 				AFE4A7BF1C99017E00DAFD91 /* TabeBarViewController.swift in Sources */,
+				AFCA56041D18E25700860E99 /* TriangleLayer.swift in Sources */,
 				AF32A63B1D07B774005670F8 /* FooterReusableView.swift in Sources */,
 				AF32A6391D07B3FD005670F8 /* ThirdHeadCollectionReusableView.swift in Sources */,
 				AF32A6471D08080B005670F8 /* AreaViewController.swift in Sources */,
+				AFCA56051D18E25700860E99 /* WaveLayer.swift in Sources */,
 				AFF1197B1CB5150A0098282D /* MainDetailVC.swift in Sources */,
+				AFCA56071D18E27300860E99 /* PrefixHeader.swift in Sources */,
 				AF41D1C71CFD84F900023207 /* MyCollectionHeaderView.swift in Sources */,
 				AFE4A7BA1C9900DB00DAFD91 /* MainViewController.swift in Sources */,
 				AFF811711D06CBB800D491F4 /* MarketTopHeaderView.swift in Sources */,
+				AFC0A18A1D17F05A00C2EE3B /* SetUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

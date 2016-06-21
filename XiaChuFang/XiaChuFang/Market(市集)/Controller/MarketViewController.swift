@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MarketViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MarketViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, MarketTopHeaderViewDelegate {
 
     @IBOutlet weak var marketCollectionView: UICollectionView!
     var centerImageArray : NSMutableArray?
@@ -27,6 +27,7 @@ class MarketViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         self.view.backgroundColor = UIColor.yellowColor()
         self.title = "市集"
+        self.layoutNavigationBar()
         self.loadCollectionView()
     }
     
@@ -115,7 +116,9 @@ class MarketViewController: UIViewController, UICollectionViewDelegate, UICollec
         case UICollectionElementKindSectionHeader:
             if indexPath.section == 0 {
                 // XIB创建CollectionView的头视图
-                let topHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "MarketTopHeaderView", forIndexPath: indexPath)
+                let topHeaderView:MarketTopHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "MarketTopHeaderView", forIndexPath: indexPath) as! MarketTopHeaderView
+                topHeaderView.delegate = self
+                
                 return topHeaderView
             }
             
@@ -140,6 +143,18 @@ class MarketViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
     }
+    
+    func marketTopHeaderViewAreaBtnAction() {
+        print("跳转地区")
+        let areaDetailController = AreaViewController()
+        let areaNavController = UINavigationController.init(rootViewController: areaDetailController)
+        self.navigationController?.presentViewController(areaNavController, animated: true, completion: nil)
+    }
+    
+    func marketTopHeaderViewClassicalBtnsAction(sender: UIButton) {
+        print("\(sender.titleLabel?.text)")
+    }
+    
     
     func loadCollectionView() {
         // 定义collectionView的布局类型，流布局
@@ -172,7 +187,40 @@ class MarketViewController: UIViewController, UICollectionViewDelegate, UICollec
         // 注册footer
         marketCollectionView.registerClass(FooterReusableView.classForCoder(), forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "footer")
     }
+    
+    func layoutNavigationBar() {
+        let searchBar: UISearchBar = UISearchBar(frame: CGRect.init(x: 30, y: 20, width: SCREENWIDTH-80, height: 40))
+        searchBar.placeholder = "搜索商品"
+        searchBar.barStyle = UIBarStyle.Default
+        //        searchBar?.barTintColor = UIColor.darkGrayColor()
+        searchBar.tintColor = UIColor.blackColor()
+        searchBar.translucent = true
+        searchBar.showsBookmarkButton = false
+        searchBar.showsCancelButton = false
+        searchBar.showsSearchResultsButton = false
+        searchBar.showsScopeBar = false
+        searchBar.showsScopeBar = false
+//                searchBar.delegate = self
+        self.navigationItem.titleView = searchBar
+        
+        let leftBtn = UIButton.init(frame: CGRectMake(0, 10, 20, 20))
+        leftBtn.setImage(UIImage(imageLiteral: "fenlei"), forState: UIControlState.Normal)
+        leftBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        leftBtn.addTarget(self, action:"leftBtnAction", forControlEvents: UIControlEvents.TouchUpInside)
+        let leftItem = UIBarButtonItem.init(customView: leftBtn)
+        self.navigationItem.leftBarButtonItem = leftItem
+        
+        let rightBtn = UIButton.init(frame: CGRectMake(0, 10, 20, 20))
+        rightBtn.setImage(UIImage(imageLiteral: "gouwuche"), forState: UIControlState.Normal)
+        rightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        rightBtn.addTarget(self, action:"leftBtnAction", forControlEvents: UIControlEvents.TouchUpInside)
+        let rightItem = UIBarButtonItem.init(customView: rightBtn)
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
 
+    func leftBtnAction() {
+        
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

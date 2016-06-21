@@ -15,7 +15,7 @@ protocol MainHeaderViewDelegate: class {
 
 class MainHeaderView: UIView {
     
-    var delegate       : MainHeaderViewDelegate?
+    weak var delegate       : MainHeaderViewDelegate?
     
     /*
      * 顶部两个大按钮

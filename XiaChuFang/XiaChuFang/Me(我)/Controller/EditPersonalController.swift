@@ -1,22 +1,21 @@
 //
-//  CommunityVC.swift
+//  EditPersonalController.swift
 //  XiaChuFang
 //
-//  Created by 罗金 on 16/3/15.
+//  Created by 罗金 on 16/6/21.
 //  Copyright © 2016年 EasyFlower. All rights reserved.
 //
 
 import UIKit
 
-class CommunityVC: UIViewController {
+class EditPersonalController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = XCFColor(242, g: 242, b: 242)
         
-        self.title = "社区"
-        self.view.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {

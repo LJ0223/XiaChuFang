@@ -21,6 +21,9 @@
                     <state key="normal" title="所在地区 北京市">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="areaBtnAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="fZo-Ti-QWN"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmt-oe-RGc">
                     <rect key="frame" x="0.0" y="42" width="404" height="1"/>
@@ -67,6 +70,9 @@
                             <state key="normal" title="方便食品">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="UDJ-dR-lRF"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKh-ro-XDQ">
                             <rect key="frame" x="101" y="50" width="101" height="50"/>
@@ -74,6 +80,9 @@
                             <state key="normal" title="进口食品">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="L0g-uP-a4Y"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hah-Bb-7NB">
                             <rect key="frame" x="0.0" y="0.0" width="101" height="50"/>
@@ -84,6 +93,9 @@
                             <state key="normal" title="烘焙">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="P7I-aJ-vQU"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3a-ZN-UdJ">
                             <rect key="frame" x="101" y="0.0" width="101" height="50"/>
@@ -91,6 +103,9 @@
                             <state key="normal" title="果蔬生鲜">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="weK-H3-N4B"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6x-0a-e9q">
                             <rect key="frame" x="202" y="0.0" width="101" height="50"/>
@@ -98,6 +113,9 @@
                             <state key="normal" title="器具">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="OER-tW-zdC"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-6A-Etn">
                             <rect key="frame" x="303" y="0.0" width="101" height="50"/>
@@ -105,6 +123,9 @@
                             <state key="normal" title="特色中国">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="hvi-aD-gdl"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFO-SU-UAl">
                             <rect key="frame" x="202" y="50" width="101" height="50"/>
@@ -112,6 +133,9 @@
                             <state key="normal" title="调味品">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="C0X-qD-LhX"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBj-SB-VJF">
                             <rect key="frame" x="303" y="50" width="101" height="50"/>
@@ -119,6 +143,9 @@
                             <state key="normal" title="全部分类">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="classicalBtnsAction:" destination="dna-iC-cxQ" eventType="touchUpInside" id="XSg-Ne-X0a"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

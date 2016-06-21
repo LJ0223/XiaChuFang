@@ -18,7 +18,8 @@ class MeViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.title = "我"
         // Do any additional setup after loading the view.
         
-        self.view.backgroundColor = UIColor.greenColor()
+        self.view.backgroundColor = UIColor.whiteColor()
+        self.layoutNavigationBar()
     }
     
     // MARK: - UITableViewDelegate && UITableViewDataSource
@@ -166,6 +167,27 @@ class MeViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         } else if sender.tag == 222 {
             print("菜谱")
         }
+    }
+    
+    func layoutNavigationBar() {
+//        let leftBtn = UIButton.init(frame: CGRectMake(0, 10, 20, 20))
+//        leftBtn.setImage(UIImage(imageLiteral: "fenlei"), forState: UIControlState.Normal)
+//        leftBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+//        leftBtn.addTarget(self, action:"rightBarBtnAction", forControlEvents: UIControlEvents.TouchUpInside)
+//        let leftItem = UIBarButtonItem.init(customView: leftBtn)
+//        self.navigationItem.leftBarButtonItem = leftItem
+        
+        let rightBtn = UIButton.init(frame: CGRectMake(0, 10, 20, 20))
+        rightBtn.setImage(UIImage(imageLiteral: "set"), forState: UIControlState.Normal)
+        rightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        rightBtn.addTarget(self, action:"rightBarBtnAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        let rightItem = UIBarButtonItem.init(customView: rightBtn)
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
+    
+   func rightBarBtnAction(sender: AnyObject) {
+        let setUpController = SetUpViewController()
+        self.navigationController?.pushViewController(setUpController, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
