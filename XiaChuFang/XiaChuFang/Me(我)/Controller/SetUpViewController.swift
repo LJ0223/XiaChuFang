@@ -19,9 +19,11 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
+        self.hidesBottomBarWhenPushed = true
+
         dataSource = NSMutableArray.init(array: [["账号管理", "设置密码", "收货地址"], ["发现好友", "消息推送"], ["八下厨房告诉好友", "帮助下厨房评分"]])
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,7 +89,7 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.backgroundColor = UIColor.whiteColor()
         let cellArray = NSArray.init(array: self.dataSource.objectAtIndex(indexPath.section) as! NSArray)
         cell.textLabel?.text = cellArray.objectAtIndex(indexPath.row) as? String
-        
+        cell.textLabel?.font = UIFont.systemFontOfSize(13)
         return cell
     }
     

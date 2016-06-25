@@ -183,6 +183,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         mainTable?.tableHeaderView = headerView
     }
     
+    func leftBtnAction() {
+        
+    }
+    
     // MARK: SearchBar
     func layoutNavigationBar() {
         searchBar = UISearchBar(frame: CGRect.init(x: 30, y: 20, width: SCREENWIDTH-60, height: 40))

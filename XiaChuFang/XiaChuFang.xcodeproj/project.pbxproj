@@ -57,6 +57,10 @@
 		AFE4A7BF1C99017E00DAFD91 /* TabeBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4A7BE1C99017E00DAFD91 /* TabeBarViewController.swift */; };
 		AFE4A7C41C9948E600DAFD91 /* MainClassicalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4A7C31C9948E600DAFD91 /* MainClassicalCell.swift */; };
 		AFE4A7C61C99685200DAFD91 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4A7C51C99685200DAFD91 /* MainHeaderView.swift */; };
+		AFEC98C91D1A363000CF23D4 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFEC98C71D1A363000CF23D4 /* area.plist */; };
+		AFEC98CA1D1A363000CF23D4 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFEC98C81D1A363000CF23D4 /* city.plist */; };
+		AFEC98CC1D1A3E4100CF23D4 /* LJPlacePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC98CB1D1A3E4100CF23D4 /* LJPlacePickerView.swift */; };
+		AFEC98CE1D1A93AD00CF23D4 /* LJDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC98CD1D1A93AD00CF23D4 /* LJDatePickerView.swift */; };
 		AFF1197B1CB5150A0098282D /* MainDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF1197A1CB5150A0098282D /* MainDetailVC.swift */; };
 		AFF1197D1CB51BC00098282D /* ImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF1197C1CB51BC00098282D /* ImageScroller.swift */; };
 		AFF8116E1D06B2EC00D491F4 /* MarketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF8116D1D06B2EC00D491F4 /* MarketViewController.xib */; };
@@ -138,6 +142,10 @@
 		AFE4A7BE1C99017E00DAFD91 /* TabeBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabeBarViewController.swift; sourceTree = "<group>"; };
 		AFE4A7C31C9948E600DAFD91 /* MainClassicalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClassicalCell.swift; sourceTree = "<group>"; };
 		AFE4A7C51C99685200DAFD91 /* MainHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		AFEC98C71D1A363000CF23D4 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		AFEC98C81D1A363000CF23D4 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		AFEC98CB1D1A3E4100CF23D4 /* LJPlacePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJPlacePickerView.swift; sourceTree = "<group>"; };
+		AFEC98CD1D1A93AD00CF23D4 /* LJDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJDatePickerView.swift; sourceTree = "<group>"; };
 		AFF1197A1CB5150A0098282D /* MainDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDetailVC.swift; sourceTree = "<group>"; };
 		AFF1197C1CB51BC00098282D /* ImageScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScroller.swift; sourceTree = "<group>"; };
 		AFF8116D1D06B2EC00D491F4 /* MarketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +190,8 @@
 		AFC945D11CD98D9200682472 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AFEC98C71D1A363000CF23D4 /* area.plist */,
+				AFEC98C81D1A363000CF23D4 /* city.plist */,
 				AFCA55FD1D18E25700860E99 /* Layer */,
 				AFC945D21CD98DAF00682472 /* mainListPlist.plist */,
 				AFCA56081D18E28E00860E99 /* Extension.swift */,
@@ -208,6 +218,8 @@
 				AFD4D6F81D02C03A00ECF7CE /* MeHeaderView.xib */,
 				AFC0A18C1D17F38000C2EE3B /* SetUpHeaderView.swift */,
 				AFC0A18E1D17F38800C2EE3B /* SetUpHeaderView.xib */,
+				AFEC98CB1D1A3E4100CF23D4 /* LJPlacePickerView.swift */,
+				AFEC98CD1D1A93AD00CF23D4 /* LJDatePickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -511,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF32A63F1D07BDC9005670F8 /* CenterScrollHeaderCollectionReusableView.xib in Resources */,
+				AFEC98C91D1A363000CF23D4 /* area.plist in Resources */,
 				AFE4A77D1C99009000DAFD91 /* LaunchScreen.storyboard in Resources */,
 				AF41D1C91CFD850900023207 /* MyCollectionHeaderView.xib in Resources */,
 				AFD4D6F91D02C03A00ECF7CE /* MeHeaderView.xib in Resources */,
@@ -518,6 +531,7 @@
 				AFD4D6EE1D02BE1800ECF7CE /* MeViewController.xib in Resources */,
 				AFF8116E1D06B2EC00D491F4 /* MarketViewController.xib in Resources */,
 				AFD696D21CFD741400A1D4CA /* MainDetailVC.xib in Resources */,
+				AFEC98CA1D1A363000CF23D4 /* city.plist in Resources */,
 				AFC945D71CD9984100682472 /* Image.xcassets in Resources */,
 				AFC945CF1CD98CC500682472 /* MainClassicalSectionHeaderView.xib in Resources */,
 				AFC945D31CD98DAF00682472 /* mainListPlist.plist in Resources */,
@@ -555,7 +569,9 @@
 			files = (
 				AFC945D51CD9981C00682472 /* SearchViewController.swift in Sources */,
 				AFE4A7C61C99685200DAFD91 /* MainHeaderView.swift in Sources */,
+				AFEC98CE1D1A93AD00CF23D4 /* LJDatePickerView.swift in Sources */,
 				AFD696D51CFD74D000A1D4CA /* MyCollectionViewCell.swift in Sources */,
+				AFEC98CC1D1A3E4100CF23D4 /* LJPlacePickerView.swift in Sources */,
 				AFC0A18D1D17F38000C2EE3B /* SetUpHeaderView.swift in Sources */,
 				AFCA56121D18E69900860E99 /* EditPersonalController.swift in Sources */,
 				AFE4A7C41C9948E600DAFD91 /* MainClassicalCell.swift in Sources */,
