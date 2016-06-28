@@ -21,7 +21,7 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.hidesBottomBarWhenPushed = true
 
-        dataSource = NSMutableArray.init(array: [["账号管理", "设置密码", "收货地址"], ["发现好友", "消息推送"], ["八下厨房告诉好友", "帮助下厨房评分"]])
+        dataSource = NSMutableArray.init(array: [["账号管理", "设置密码", "收货地址"], ["发现好友", "消息推送"], ["把下厨房告诉好友", "帮助下厨房评分"]])
     }
 
     

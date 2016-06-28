@@ -84,6 +84,7 @@ class LJPlacePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         self.removeFromSuperview()
         
         if let _delaget = delegate {
+            print("省份为：\(provinceStr)")
             _delaget.dismissPickerViewAction(sender, provinceStr: self.provinceStr, cityStr: self.cityStr, townStr: self.townStr)
         }
     }
@@ -107,6 +108,7 @@ class LJPlacePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         if component == 0 {
             let provinceDic:NSDictionary = NSDictionary.init(dictionary: (self.provinceArray!.objectAtIndex(row) as? NSDictionary)!)
             self.provinceStr = provinceDic.objectForKey(provinceDic.allKeys[1]) as? String
+            print("row ====\(row)  省份为：\(provinceStr)")
             return self.provinceStr
         } else if component == 1 {
             let cityDic:NSDictionary = NSDictionary.init(dictionary: (self.cityArray!.objectAtIndex(row) as? NSDictionary)!)
@@ -122,6 +124,8 @@ class LJPlacePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0 {
             let provinceDic:NSDictionary = NSDictionary.init(dictionary: (self.provinceArray!.objectAtIndex(row) as? NSDictionary)!)
+            self.provinceStr = provinceDic.objectForKey(provinceDic.allKeys[1]) as? String
+            print("row ====\(row)  省份为：\(provinceStr)")
             self.selectedArray = provinceDic.objectForKey(provinceDic.allKeys[0]) as? NSArray
             if self.selectedArray!.count > 0 {
                 self.cityArray = self.selectedArray

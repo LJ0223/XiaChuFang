@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailMarketCell" customModule="XiaChuFang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="255"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="255"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailMarketTest1" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-HZ-zgM">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="159"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Xah-Ce-sT8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xah-Ce-sT8"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥3.8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4P-qg-jhT">
+                        <rect key="frame" x="10" y="225" width="195" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="k0e-NI-T7e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.98431378599999997" green="0.26666668059999998" blue="0.1176470667" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售34224" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5v-QG-oSj">
+                        <rect key="frame" x="10" y="202" width="195" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="DwU-Vo-Cn8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="麦可尔 | 新良蛋糕粉 低筋面粉 500g" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z92-vM-FEf">
+                        <rect key="frame" x="10" y="162" width="195" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Opp-M9-w50"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--------------------------------------------------------------------" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqk-kR-xhj">
+                        <rect key="frame" x="10" y="222" width="195" height="3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="Aa0-35-17P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Epu-HZ-zgM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0xo-Y9-epE"/>
+                <constraint firstItem="S5v-QG-oSj" firstAttribute="top" secondItem="Z92-vM-FEf" secondAttribute="bottom" id="ApO-gA-GSk"/>
+                <constraint firstAttribute="bottom" secondItem="L4P-qg-jhT" secondAttribute="bottom" id="DHH-89-stk"/>
+                <constraint firstAttribute="bottom" secondItem="L4P-qg-jhT" secondAttribute="bottom" id="F3L-MY-JcI"/>
+                <constraint firstItem="dqk-kR-xhj" firstAttribute="top" secondItem="S5v-QG-oSj" secondAttribute="bottom" id="Gga-kh-QoT"/>
+                <constraint firstItem="L4P-qg-jhT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="HzZ-OJ-RgJ"/>
+                <constraint firstItem="dqk-kR-xhj" firstAttribute="width" secondItem="S5v-QG-oSj" secondAttribute="width" id="JXC-Uw-7xb"/>
+                <constraint firstAttribute="trailing" secondItem="L4P-qg-jhT" secondAttribute="trailing" constant="10" id="N7h-oL-eRb"/>
+                <constraint firstItem="L4P-qg-jhT" firstAttribute="leading" secondItem="S5v-QG-oSj" secondAttribute="leading" id="NdO-RK-K9x"/>
+                <constraint firstItem="Epu-HZ-zgM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WCK-0u-gU7"/>
+                <constraint firstItem="L4P-qg-jhT" firstAttribute="width" secondItem="S5v-QG-oSj" secondAttribute="width" id="a34-II-92o"/>
+                <constraint firstItem="S5v-QG-oSj" firstAttribute="top" secondItem="Z92-vM-FEf" secondAttribute="bottom" id="aUG-Kv-NzK"/>
+                <constraint firstItem="L4P-qg-jhT" firstAttribute="top" secondItem="S5v-QG-oSj" secondAttribute="bottom" constant="3" id="bfh-ck-MTY"/>
+                <constraint firstItem="S5v-QG-oSj" firstAttribute="leading" secondItem="Z92-vM-FEf" secondAttribute="leading" id="c9s-MR-eZO"/>
+                <constraint firstItem="S5v-QG-oSj" firstAttribute="width" secondItem="Z92-vM-FEf" secondAttribute="width" id="iQ2-Hi-1MA"/>
+                <constraint firstItem="dqk-kR-xhj" firstAttribute="leading" secondItem="S5v-QG-oSj" secondAttribute="leading" id="qeW-VO-uRD"/>
+                <constraint firstAttribute="trailing" secondItem="Epu-HZ-zgM" secondAttribute="trailing" id="xiw-DD-AGZ"/>
+                <constraint firstItem="Z92-vM-FEf" firstAttribute="top" secondItem="Epu-HZ-zgM" secondAttribute="bottom" constant="3" id="yLL-8b-FUr"/>
+            </constraints>
+            <size key="customSize" width="215" height="255"/>
+            <point key="canvasLocation" x="218.5" y="224.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="detailMarketTest1" width="556" height="577"/>
+    </resources>
+</document>

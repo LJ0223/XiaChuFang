@@ -15,12 +15,20 @@
 		AF32A6431D07F748005670F8 /* MarketCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF32A6411D07F748005670F8 /* MarketCenterCell.xib */; };
 		AF32A6471D08080B005670F8 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32A6451D08080B005670F8 /* AreaViewController.swift */; };
 		AF32A6481D08080B005670F8 /* AreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF32A6461D08080B005670F8 /* AreaViewController.xib */; };
+		AF3978421D2100E000B389AD /* MarketDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3978401D2100E000B389AD /* MarketDetailController.swift */; };
+		AF3978431D2100E000B389AD /* MarketDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3978411D2100E000B389AD /* MarketDetailController.xib */; };
+		AF3978461D21078100B389AD /* DetailMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3978441D21078100B389AD /* DetailMarketCell.swift */; };
+		AF3978471D21078100B389AD /* DetailMarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3978451D21078100B389AD /* DetailMarketCell.xib */; };
+		AF39784E1D213EF000B389AD /* DetailMarketReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39784C1D213EF000B389AD /* DetailMarketReusableView.swift */; };
+		AF39784F1D213EF000B389AD /* DetailMarketReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF39784D1D213EF000B389AD /* DetailMarketReusableView.xib */; };
 		AF41D1C71CFD84F900023207 /* MyCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41D1C61CFD84F900023207 /* MyCollectionHeaderView.swift */; };
 		AF41D1C91CFD850900023207 /* MyCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF41D1C81CFD850900023207 /* MyCollectionHeaderView.xib */; };
 		AFC0A18A1D17F05A00C2EE3B /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0A1881D17F05A00C2EE3B /* SetUpViewController.swift */; };
 		AFC0A18B1D17F05A00C2EE3B /* SetUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0A1891D17F05A00C2EE3B /* SetUpViewController.xib */; };
 		AFC0A18D1D17F38000C2EE3B /* SetUpHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0A18C1D17F38000C2EE3B /* SetUpHeaderView.swift */; };
 		AFC0A18F1D17F38800C2EE3B /* SetUpHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0A18E1D17F38800C2EE3B /* SetUpHeaderView.xib */; };
+		AFC892401D221FAD00B241F7 /* DetailMarketHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8923E1D221FAD00B241F7 /* DetailMarketHeaderCell.swift */; };
+		AFC892411D221FAD00B241F7 /* DetailMarketHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC8923F1D221FAD00B241F7 /* DetailMarketHeaderCell.xib */; };
 		AFC945CD1CD98CB200682472 /* MainClassicalSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC945CC1CD98CB200682472 /* MainClassicalSectionHeaderView.swift */; };
 		AFC945CF1CD98CC500682472 /* MainClassicalSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC945CE1CD98CC500682472 /* MainClassicalSectionHeaderView.xib */; };
 		AFC945D31CD98DAF00682472 /* mainListPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFC945D21CD98DAF00682472 /* mainListPlist.plist */; };
@@ -94,12 +102,20 @@
 		AF32A6411D07F748005670F8 /* MarketCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketCenterCell.xib; sourceTree = "<group>"; };
 		AF32A6451D08080B005670F8 /* AreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		AF32A6461D08080B005670F8 /* AreaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaViewController.xib; sourceTree = "<group>"; };
+		AF3978401D2100E000B389AD /* MarketDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketDetailController.swift; sourceTree = "<group>"; };
+		AF3978411D2100E000B389AD /* MarketDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketDetailController.xib; sourceTree = "<group>"; };
+		AF3978441D21078100B389AD /* DetailMarketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMarketCell.swift; sourceTree = "<group>"; };
+		AF3978451D21078100B389AD /* DetailMarketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailMarketCell.xib; sourceTree = "<group>"; };
+		AF39784C1D213EF000B389AD /* DetailMarketReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMarketReusableView.swift; sourceTree = "<group>"; };
+		AF39784D1D213EF000B389AD /* DetailMarketReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailMarketReusableView.xib; sourceTree = "<group>"; };
 		AF41D1C61CFD84F900023207 /* MyCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionHeaderView.swift; sourceTree = "<group>"; };
 		AF41D1C81CFD850900023207 /* MyCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionHeaderView.xib; sourceTree = "<group>"; };
 		AFC0A1881D17F05A00C2EE3B /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		AFC0A1891D17F05A00C2EE3B /* SetUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUpViewController.xib; sourceTree = "<group>"; };
 		AFC0A18C1D17F38000C2EE3B /* SetUpHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpHeaderView.swift; sourceTree = "<group>"; };
 		AFC0A18E1D17F38800C2EE3B /* SetUpHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUpHeaderView.xib; sourceTree = "<group>"; };
+		AFC8923E1D221FAD00B241F7 /* DetailMarketHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMarketHeaderCell.swift; sourceTree = "<group>"; };
+		AFC8923F1D221FAD00B241F7 /* DetailMarketHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailMarketHeaderCell.xib; sourceTree = "<group>"; };
 		AFC945CC1CD98CB200682472 /* MainClassicalSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClassicalSectionHeaderView.swift; sourceTree = "<group>"; };
 		AFC945CE1CD98CC500682472 /* MainClassicalSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainClassicalSectionHeaderView.xib; sourceTree = "<group>"; };
 		AFC945D21CD98DAF00682472 /* mainListPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainListPlist.plist; sourceTree = "<group>"; };
@@ -360,6 +376,8 @@
 			children = (
 				AFE4A7AC1C9900DB00DAFD91 /* MarketViewController.swift */,
 				AFF8116D1D06B2EC00D491F4 /* MarketViewController.xib */,
+				AF3978401D2100E000B389AD /* MarketDetailController.swift */,
+				AF3978411D2100E000B389AD /* MarketDetailController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,6 +431,12 @@
 				AF32A63A1D07B774005670F8 /* FooterReusableView.swift */,
 				AF32A6401D07F748005670F8 /* MarketCenterCell.swift */,
 				AF32A6411D07F748005670F8 /* MarketCenterCell.xib */,
+				AF3978441D21078100B389AD /* DetailMarketCell.swift */,
+				AF3978451D21078100B389AD /* DetailMarketCell.xib */,
+				AF39784C1D213EF000B389AD /* DetailMarketReusableView.swift */,
+				AF39784D1D213EF000B389AD /* DetailMarketReusableView.xib */,
+				AFC8923E1D221FAD00B241F7 /* DetailMarketHeaderCell.swift */,
+				AFC8923F1D221FAD00B241F7 /* DetailMarketHeaderCell.xib */,
 			);
 			name = View;
 			path = Controller/View;
@@ -522,13 +546,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC892411D221FAD00B241F7 /* DetailMarketHeaderCell.xib in Resources */,
 				AF32A63F1D07BDC9005670F8 /* CenterScrollHeaderCollectionReusableView.xib in Resources */,
 				AFEC98C91D1A363000CF23D4 /* area.plist in Resources */,
 				AFE4A77D1C99009000DAFD91 /* LaunchScreen.storyboard in Resources */,
+				AF3978471D21078100B389AD /* DetailMarketCell.xib in Resources */,
 				AF41D1C91CFD850900023207 /* MyCollectionHeaderView.xib in Resources */,
 				AFD4D6F91D02C03A00ECF7CE /* MeHeaderView.xib in Resources */,
 				AFCA56131D18E69900860E99 /* EditPersonalController.xib in Resources */,
 				AFD4D6EE1D02BE1800ECF7CE /* MeViewController.xib in Resources */,
+				AF39784F1D213EF000B389AD /* DetailMarketReusableView.xib in Resources */,
 				AFF8116E1D06B2EC00D491F4 /* MarketViewController.xib in Resources */,
 				AFD696D21CFD741400A1D4CA /* MainDetailVC.xib in Resources */,
 				AFEC98CA1D1A363000CF23D4 /* city.plist in Resources */,
@@ -540,6 +567,7 @@
 				AFC0A18B1D17F05A00C2EE3B /* SetUpViewController.xib in Resources */,
 				AFD4D6EC1D02BAF400ECF7CE /* Assets.xcassets in Resources */,
 				AFF811731D06CBC600D491F4 /* MarketTopHeaderView.xib in Resources */,
+				AF3978431D2100E000B389AD /* MarketDetailController.xib in Resources */,
 				AFC0A18F1D17F38800C2EE3B /* SetUpHeaderView.xib in Resources */,
 				AFE4A7781C99009000DAFD91 /* Main.storyboard in Resources */,
 				AF32A6481D08080B005670F8 /* AreaViewController.xib in Resources */,
@@ -574,6 +602,7 @@
 				AFEC98CC1D1A3E4100CF23D4 /* LJPlacePickerView.swift in Sources */,
 				AFC0A18D1D17F38000C2EE3B /* SetUpHeaderView.swift in Sources */,
 				AFCA56121D18E69900860E99 /* EditPersonalController.swift in Sources */,
+				AFC892401D221FAD00B241F7 /* DetailMarketHeaderCell.swift in Sources */,
 				AFE4A7C41C9948E600DAFD91 /* MainClassicalCell.swift in Sources */,
 				AFCA55FC1D18E24500860E99 /* LJAnimationView.swift in Sources */,
 				AFE4A7BC1C9900DB00DAFD91 /* MeViewController.swift in Sources */,
@@ -582,6 +611,7 @@
 				AFC945CD1CD98CB200682472 /* MainClassicalSectionHeaderView.swift in Sources */,
 				AF32A6421D07F748005670F8 /* MarketCenterCell.swift in Sources */,
 				AFCA56021D18E25700860E99 /* CircleLayer.swift in Sources */,
+				AF3978421D2100E000B389AD /* MarketDetailController.swift in Sources */,
 				AFE4A7B91C9900DB00DAFD91 /* CommunityVC.swift in Sources */,
 				AFCA56031D18E25700860E99 /* RectangleLayer.swift in Sources */,
 				AFD8185F1CA4DB5000DE1C85 /* CustomCentBtn.swift in Sources */,
@@ -594,6 +624,8 @@
 				AFE4A7BF1C99017E00DAFD91 /* TabeBarViewController.swift in Sources */,
 				AFCA56041D18E25700860E99 /* TriangleLayer.swift in Sources */,
 				AF32A63B1D07B774005670F8 /* FooterReusableView.swift in Sources */,
+				AF3978461D21078100B389AD /* DetailMarketCell.swift in Sources */,
+				AF39784E1D213EF000B389AD /* DetailMarketReusableView.swift in Sources */,
 				AF32A6391D07B3FD005670F8 /* ThirdHeadCollectionReusableView.swift in Sources */,
 				AF32A6471D08080B005670F8 /* AreaViewController.swift in Sources */,
 				AFCA56051D18E25700860E99 /* WaveLayer.swift in Sources */,

@@ -134,7 +134,7 @@ class MarketViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
         case UICollectionElementKindSectionFooter:
               // 代码创建CollectionView的尾视图
-            let footer:FooterReusableView=collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "footer", forIndexPath: indexPath) as!FooterReusableView
+            let footer:FooterReusableView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "footer", forIndexPath: indexPath) as!FooterReusableView
             footer.backgroundColor = UIColor(colorLiteralRed: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
             
             return footer
@@ -153,6 +153,9 @@ class MarketViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func marketTopHeaderViewClassicalBtnsAction(sender: UIButton) {
         print("\(sender.titleLabel?.text)")
+        let detailMarketController = MarketDetailController()
+        detailMarketController.detailMarketTitleStr = sender.titleLabel?.text
+        self.navigationController?.pushViewController(detailMarketController, animated: true)
     }
     
     
